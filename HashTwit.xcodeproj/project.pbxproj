@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB3DB7EB205134BB000C9F4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3DB7EA205134BB000C9F4E /* AppDelegate.swift */; };
+		AB3DB7ED205134BB000C9F4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3DB7EC205134BB000C9F4E /* ViewController.swift */; };
+		AB3DB7F0205134BB000C9F4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB3DB7EE205134BB000C9F4E /* Main.storyboard */; };
+		AB3DB7F2205134BB000C9F4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB3DB7F1205134BB000C9F4E /* Assets.xcassets */; };
+		AB3DB7F5205134BB000C9F4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB3DB7F3205134BB000C9F4E /* LaunchScreen.storyboard */; };
+		AB3DB800205134BB000C9F4E /* HashTwitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3DB7FF205134BB000C9F4E /* HashTwitTests.swift */; };
+		AB3DB80B205134BB000C9F4E /* HashTwitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3DB80A205134BB000C9F4E /* HashTwitUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB3DB7FC205134BB000C9F4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB3DB7DF205134BB000C9F4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB3DB7E6205134BB000C9F4E;
+			remoteInfo = HashTwit;
+		};
+		AB3DB807205134BB000C9F4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB3DB7DF205134BB000C9F4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB3DB7E6205134BB000C9F4E;
+			remoteInfo = HashTwit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AB3DB7E7205134BB000C9F4E /* HashTwit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HashTwit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB3DB7EA205134BB000C9F4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AB3DB7EC205134BB000C9F4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB3DB7EF205134BB000C9F4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB3DB7F1205134BB000C9F4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB3DB7F4205134BB000C9F4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB3DB7F6205134BB000C9F4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB3DB7FB205134BB000C9F4E /* HashTwitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HashTwitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB3DB7FF205134BB000C9F4E /* HashTwitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTwitTests.swift; sourceTree = "<group>"; };
+		AB3DB801205134BB000C9F4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB3DB806205134BB000C9F4E /* HashTwitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HashTwitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB3DB80A205134BB000C9F4E /* HashTwitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTwitUITests.swift; sourceTree = "<group>"; };
+		AB3DB80C205134BB000C9F4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB3DB7E4205134BB000C9F4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB3DB7F8205134BB000C9F4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB3DB803205134BB000C9F4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB3DB7DE205134BB000C9F4E = {
+			isa = PBXGroup;
+			children = (
+				AB3DB7E9205134BB000C9F4E /* HashTwit */,
+				AB3DB7FE205134BB000C9F4E /* HashTwitTests */,
+				AB3DB809205134BB000C9F4E /* HashTwitUITests */,
+				AB3DB7E8205134BB000C9F4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB3DB7E8205134BB000C9F4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB3DB7E7205134BB000C9F4E /* HashTwit.app */,
+				AB3DB7FB205134BB000C9F4E /* HashTwitTests.xctest */,
+				AB3DB806205134BB000C9F4E /* HashTwitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB3DB7E9205134BB000C9F4E /* HashTwit */ = {
+			isa = PBXGroup;
+			children = (
+				AB3DB7EA205134BB000C9F4E /* AppDelegate.swift */,
+				AB3DB7EC205134BB000C9F4E /* ViewController.swift */,
+				AB3DB7EE205134BB000C9F4E /* Main.storyboard */,
+				AB3DB7F1205134BB000C9F4E /* Assets.xcassets */,
+				AB3DB7F3205134BB000C9F4E /* LaunchScreen.storyboard */,
+				AB3DB7F6205134BB000C9F4E /* Info.plist */,
+			);
+			path = HashTwit;
+			sourceTree = "<group>";
+		};
+		AB3DB7FE205134BB000C9F4E /* HashTwitTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB3DB7FF205134BB000C9F4E /* HashTwitTests.swift */,
+				AB3DB801205134BB000C9F4E /* Info.plist */,
+			);
+			path = HashTwitTests;
+			sourceTree = "<group>";
+		};
+		AB3DB809205134BB000C9F4E /* HashTwitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AB3DB80A205134BB000C9F4E /* HashTwitUITests.swift */,
+				AB3DB80C205134BB000C9F4E /* Info.plist */,
+			);
+			path = HashTwitUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB3DB7E6205134BB000C9F4E /* HashTwit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB3DB80F205134BB000C9F4E /* Build configuration list for PBXNativeTarget "HashTwit" */;
+			buildPhases = (
+				AB3DB7E3205134BB000C9F4E /* Sources */,
+				AB3DB7E4205134BB000C9F4E /* Frameworks */,
+				AB3DB7E5205134BB000C9F4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HashTwit;
+			productName = HashTwit;
+			productReference = AB3DB7E7205134BB000C9F4E /* HashTwit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB3DB7FA205134BB000C9F4E /* HashTwitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB3DB812205134BB000C9F4E /* Build configuration list for PBXNativeTarget "HashTwitTests" */;
+			buildPhases = (
+				AB3DB7F7205134BB000C9F4E /* Sources */,
+				AB3DB7F8205134BB000C9F4E /* Frameworks */,
+				AB3DB7F9205134BB000C9F4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB3DB7FD205134BB000C9F4E /* PBXTargetDependency */,
+			);
+			name = HashTwitTests;
+			productName = HashTwitTests;
+			productReference = AB3DB7FB205134BB000C9F4E /* HashTwitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AB3DB805205134BB000C9F4E /* HashTwitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB3DB815205134BB000C9F4E /* Build configuration list for PBXNativeTarget "HashTwitUITests" */;
+			buildPhases = (
+				AB3DB802205134BB000C9F4E /* Sources */,
+				AB3DB803205134BB000C9F4E /* Frameworks */,
+				AB3DB804205134BB000C9F4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB3DB808205134BB000C9F4E /* PBXTargetDependency */,
+			);
+			name = HashTwitUITests;
+			productName = HashTwitUITests;
+			productReference = AB3DB806205134BB000C9F4E /* HashTwitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB3DB7DF205134BB000C9F4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = kotvaska;
+				TargetAttributes = {
+					AB3DB7E6205134BB000C9F4E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					AB3DB7FA205134BB000C9F4E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AB3DB7E6205134BB000C9F4E;
+					};
+					AB3DB805205134BB000C9F4E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AB3DB7E6205134BB000C9F4E;
+					};
+				};
+			};
+			buildConfigurationList = AB3DB7E2205134BB000C9F4E /* Build configuration list for PBXProject "HashTwit" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB3DB7DE205134BB000C9F4E;
+			productRefGroup = AB3DB7E8205134BB000C9F4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB3DB7E6205134BB000C9F4E /* HashTwit */,
+				AB3DB7FA205134BB000C9F4E /* HashTwitTests */,
+				AB3DB805205134BB000C9F4E /* HashTwitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB3DB7E5205134BB000C9F4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB3DB7F5205134BB000C9F4E /* LaunchScreen.storyboard in Resources */,
+				AB3DB7F2205134BB000C9F4E /* Assets.xcassets in Resources */,
+				AB3DB7F0205134BB000C9F4E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB3DB7F9205134BB000C9F4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB3DB804205134BB000C9F4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB3DB7E3205134BB000C9F4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB3DB7ED205134BB000C9F4E /* ViewController.swift in Sources */,
+				AB3DB7EB205134BB000C9F4E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB3DB7F7205134BB000C9F4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB3DB800205134BB000C9F4E /* HashTwitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB3DB802205134BB000C9F4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB3DB80B205134BB000C9F4E /* HashTwitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB3DB7FD205134BB000C9F4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB3DB7E6205134BB000C9F4E /* HashTwit */;
+			targetProxy = AB3DB7FC205134BB000C9F4E /* PBXContainerItemProxy */;
+		};
+		AB3DB808205134BB000C9F4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB3DB7E6205134BB000C9F4E /* HashTwit */;
+			targetProxy = AB3DB807205134BB000C9F4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB3DB7EE205134BB000C9F4E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB3DB7EF205134BB000C9F4E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AB3DB7F3205134BB000C9F4E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB3DB7F4205134BB000C9F4E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB3DB80D205134BB000C9F4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AB3DB80E205134BB000C9F4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB3DB810205134BB000C9F4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DYMKXHBMZ;
+				INFOPLIST_FILE = HashTwit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kotvaska.HashTwit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB3DB811205134BB000C9F4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DYMKXHBMZ;
+				INFOPLIST_FILE = HashTwit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kotvaska.HashTwit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AB3DB813205134BB000C9F4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DYMKXHBMZ;
+				INFOPLIST_FILE = HashTwitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kotvaska.HashTwitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HashTwit.app/HashTwit";
+			};
+			name = Debug;
+		};
+		AB3DB814205134BB000C9F4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DYMKXHBMZ;
+				INFOPLIST_FILE = HashTwitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kotvaska.HashTwitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HashTwit.app/HashTwit";
+			};
+			name = Release;
+		};
+		AB3DB816205134BB000C9F4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DYMKXHBMZ;
+				INFOPLIST_FILE = HashTwitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kotvaska.HashTwitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HashTwit;
+			};
+			name = Debug;
+		};
+		AB3DB817205134BB000C9F4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DYMKXHBMZ;
+				INFOPLIST_FILE = HashTwitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kotvaska.HashTwitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HashTwit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB3DB7E2205134BB000C9F4E /* Build configuration list for PBXProject "HashTwit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB3DB80D205134BB000C9F4E /* Debug */,
+				AB3DB80E205134BB000C9F4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB3DB80F205134BB000C9F4E /* Build configuration list for PBXNativeTarget "HashTwit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB3DB810205134BB000C9F4E /* Debug */,
+				AB3DB811205134BB000C9F4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB3DB812205134BB000C9F4E /* Build configuration list for PBXNativeTarget "HashTwitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB3DB813205134BB000C9F4E /* Debug */,
+				AB3DB814205134BB000C9F4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB3DB815205134BB000C9F4E /* Build configuration list for PBXNativeTarget "HashTwitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB3DB816205134BB000C9F4E /* Debug */,
+				AB3DB817205134BB000C9F4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB3DB7DF205134BB000C9F4E /* Project object */;
+}
