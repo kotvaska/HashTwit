@@ -5,5 +5,8 @@
 
 import Foundation
 
-class NetworkClient {
+protocol NetworkClient {
+
+    func loadTweets(with hashtag: String)
+
 }

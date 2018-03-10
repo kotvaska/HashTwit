@@ -8,14 +8,15 @@ import UIKit
 class ListRouter: BaseRouter {
 
     typealias C = ListViewController
-
     var controller: C?
+
+    var presenter: ListPresenter?
 
     func showFrom(from window: UIWindow) {
         let viewController = viewControllerFromStoryboard(with: "ListViewController") as! ListViewController
-//        viewController.eventHandler = listPresenter
-//        listViewController = viewController
-//        listPresenter?.userInterface = viewController
+        viewController.presenter = presenter
+        controller = viewController
+        presenter?.view = viewController
         showRootViewController(viewController, in: window)
     }
 

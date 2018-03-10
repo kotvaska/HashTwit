@@ -7,27 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		279040A33C773146545F1CB0 /* ListInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904B4D609993752A2BB528 /* ListInteractorOutput.swift */; };
 		279041EAF298C314EBD693C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27904AB3EFC38E716B345BCC /* Assets.xcassets */; };
+		279041FF1E29EA7BFC9FDF01 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279042BDA03BE05128AEFFDE /* BaseView.swift */; };
 		279042CE1379AF220C4E2A27 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279042DE36DDBB3470A88030 /* ListViewController.swift */; };
-		27904444DDA8A42C53B68846 /* HashtagSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904A1FA86B28EB06880F69 /* HashtagSearchViewController.swift */; };
+		279043BAC104F6E8565EE6E3 /* TwitterNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904F278550694AEF71C5F7 /* TwitterNetworkClient.swift */; };
 		279044FF22AE53740BC96CA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279042C1B653E887F60E6E91 /* Main.storyboard */; };
+		279045739D344C8ADE7D6434 /* ListPresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279044E2895DD8F7AB67B063 /* ListPresenterInterface.swift */; };
+		2790462D798C4ED87830DDD1 /* ListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904AC828EEBD17E6759DA4 /* ListViewInterface.swift */; };
+		279046B8DC6628F2E08EEBFA /* ListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2790455EA1E0ECDF88F47FD4 /* ListData.swift */; };
 		279047D4341E54DBC445256B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904FC132BD320582D9A95B /* AppDelegate.swift */; };
 		2790481D1C978F5034F02EE7 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904EF84D0787B11E590000 /* NetworkClient.swift */; };
+		27904854E8CC5CF94DFC6C2B /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279042A67691B675533C9DF3 /* BasePresenter.swift */; };
 		279048FE4B34E1BEA4D62285 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904E817BD2157A5D8AFA8F /* BaseRouter.swift */; };
+		2790496ABC244698F9406A77 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279043B8C66F8D08D41AAB39 /* ListPresenter.swift */; };
 		27904A7A11114C0DDD6AC5D3 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904C5AD53EC3FC8BF7F014 /* AppConfiguration.swift */; };
 		27904B3BFB65B33C22E3615F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27904CE889B863171EB67F62 /* LaunchScreen.storyboard */; };
 		27904C3AFCDBF9FB9915526A /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2790468C57DA6C8C1B2D493D /* ListRouter.swift */; };
+		27904CCD6FC6E839CA610337 /* ListInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904E85E32A1204C5011D36 /* ListInteractorInput.swift */; };
+		27904ECD163BD37C698A6248 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904537E90AF663009AED30 /* Models.swift */; };
+		27904F6F7CB39F2699BB4C59 /* TweetInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904361482D3EBF3644F9BC /* TweetInteractor.swift */; };
+		AB0BF08F2053F5A400F2E5FA /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0BF08E2053F5A400F2E5FA /* RxSwift.framework */; };
+		AB0BF0902053F5A400F2E5FA /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB0BF08E2053F5A400F2E5FA /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AB2397502053F57900765DD7 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB23974B2053F57800765DD7 /* RxCocoa.framework */; };
+		AB2397512053F57900765DD7 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB23974B2053F57800765DD7 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AB2397522053F57900765DD7 /* RxKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB23974C2053F57900765DD7 /* RxKeyboard.framework */; };
+		AB2397532053F57900765DD7 /* RxKeyboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB23974C2053F57900765DD7 /* RxKeyboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AB2397542053F57900765DD7 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB23974D2053F57900765DD7 /* RxBlocking.framework */; };
+		AB2397552053F57900765DD7 /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB23974D2053F57900765DD7 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AB3DB7ED205134BB000C9F4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3DB7EC205134BB000C9F4E /* ViewController.swift */; };
 		AB3DB800205134BB000C9F4E /* HashTwitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3DB7FF205134BB000C9F4E /* HashTwitTests.swift */; };
 		AB3DB80B205134BB000C9F4E /* HashTwitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3DB80A205134BB000C9F4E /* HashTwitUITests.swift */; };
-		ABCEE38920531770003BAD00 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3DB82020530EE3000C9F4E /* Result.framework */; };
-		ABCEE38A20531770003BAD00 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB3DB82020530EE3000C9F4E /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		ABCEE38B20531770003BAD00 /* TwitterShareExtensionUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3DB81D20530EAC000C9F4E /* TwitterShareExtensionUI.framework */; };
-		ABCEE38C20531770003BAD00 /* TwitterShareExtensionUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB3DB81D20530EAC000C9F4E /* TwitterShareExtensionUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		ABCEE38D20531770003BAD00 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3DB81B20530EA2000C9F4E /* TwitterKit.framework */; };
-		ABCEE38E20531770003BAD00 /* TwitterKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB3DB81B20530EA2000C9F4E /* TwitterKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		ABCEE38F20531770003BAD00 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3DB81920530E91000C9F4E /* ReactiveSwift.framework */; };
-		ABCEE39020531770003BAD00 /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB3DB81920530E91000C9F4E /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AB56119D20531AF0009B6040 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB56119C20531AF0009B6040 /* TwitterCore.framework */; };
+		AB56119E20531AF0009B6040 /* TwitterCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB56119C20531AF0009B6040 /* TwitterCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AB56119F20531B09009B6040 /* TwitterShareExtensionUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3DB81D20530EAC000C9F4E /* TwitterShareExtensionUI.framework */; };
+		AB5611A020531B09009B6040 /* TwitterShareExtensionUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB3DB81D20530EAC000C9F4E /* TwitterShareExtensionUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ABCEE399205319BB003BAD00 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3DB81B20530EA2000C9F4E /* TwitterKit.framework */; };
+		ABCEE39A205319BB003BAD00 /* TwitterKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB3DB81B20530EA2000C9F4E /* TwitterKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,10 +70,13 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				ABCEE38C20531770003BAD00 /* TwitterShareExtensionUI.framework in Embed Frameworks */,
-				ABCEE38A20531770003BAD00 /* Result.framework in Embed Frameworks */,
-				ABCEE38E20531770003BAD00 /* TwitterKit.framework in Embed Frameworks */,
-				ABCEE39020531770003BAD00 /* ReactiveSwift.framework in Embed Frameworks */,
+				AB2397512053F57900765DD7 /* RxCocoa.framework in Embed Frameworks */,
+				AB5611A020531B09009B6040 /* TwitterShareExtensionUI.framework in Embed Frameworks */,
+				AB56119E20531AF0009B6040 /* TwitterCore.framework in Embed Frameworks */,
+				AB2397532053F57900765DD7 /* RxKeyboard.framework in Embed Frameworks */,
+				AB0BF0902053F5A400F2E5FA /* RxSwift.framework in Embed Frameworks */,
+				ABCEE39A205319BB003BAD00 /* TwitterKit.framework in Embed Frameworks */,
+				AB2397552053F57900765DD7 /* RxBlocking.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,14 +87,29 @@
 		27904028C08C89E13144CEAC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		279040ABB2ECDCC7E5BD8921 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HashTwit/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		27904225A1DE64B5459B5770 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HashTwit/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		279042A67691B675533C9DF3 /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		279042BDA03BE05128AEFFDE /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		279042DE36DDBB3470A88030 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		27904361482D3EBF3644F9BC /* TweetInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetInteractor.swift; sourceTree = "<group>"; };
+		279043B8C66F8D08D41AAB39 /* ListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		279044E2895DD8F7AB67B063 /* ListPresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPresenterInterface.swift; sourceTree = "<group>"; };
+		27904537E90AF663009AED30 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		2790455EA1E0ECDF88F47FD4 /* ListData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListData.swift; sourceTree = "<group>"; };
 		2790468C57DA6C8C1B2D493D /* ListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
-		27904A1FA86B28EB06880F69 /* HashtagSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashtagSearchViewController.swift; sourceTree = "<group>"; };
 		27904AB3EFC38E716B345BCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27904AC828EEBD17E6759DA4 /* ListViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewInterface.swift; sourceTree = "<group>"; };
+		27904B4D609993752A2BB528 /* ListInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInteractorOutput.swift; sourceTree = "<group>"; };
 		27904C5AD53EC3FC8BF7F014 /* AppConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		27904E817BD2157A5D8AFA8F /* BaseRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		27904E85E32A1204C5011D36 /* ListInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInteractorInput.swift; sourceTree = "<group>"; };
 		27904EF84D0787B11E590000 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		27904F278550694AEF71C5F7 /* TwitterNetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterNetworkClient.swift; sourceTree = "<group>"; };
 		27904FC132BD320582D9A95B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AB0BF08E2053F5A400F2E5FA /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		AB23974B2053F57800765DD7 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		AB23974C2053F57900765DD7 /* RxKeyboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxKeyboard.framework; path = Carthage/Build/iOS/RxKeyboard.framework; sourceTree = "<group>"; };
+		AB23974D2053F57900765DD7 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		AB23974F2053F57900765DD7 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
 		AB3DB7E7205134BB000C9F4E /* HashTwit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HashTwit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB3DB7EC205134BB000C9F4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AB3DB7FB205134BB000C9F4E /* HashTwitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HashTwitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +123,7 @@
 		AB3DB81D20530EAC000C9F4E /* TwitterShareExtensionUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterShareExtensionUI.framework; path = Carthage/Build/iOS/TwitterShareExtensionUI.framework; sourceTree = "<group>"; };
 		AB3DB82020530EE3000C9F4E /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		AB3DB823205314B6000C9F4E /* HashTwit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HashTwit-Bridging-Header.h"; sourceTree = "<group>"; };
+		AB56119C20531AF0009B6040 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterCore.framework; path = Carthage/Build/iOS/TwitterCore.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +131,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABCEE38B20531770003BAD00 /* TwitterShareExtensionUI.framework in Frameworks */,
-				ABCEE38920531770003BAD00 /* Result.framework in Frameworks */,
-				ABCEE38D20531770003BAD00 /* TwitterKit.framework in Frameworks */,
-				ABCEE38F20531770003BAD00 /* ReactiveSwift.framework in Frameworks */,
+				AB2397502053F57900765DD7 /* RxCocoa.framework in Frameworks */,
+				AB56119F20531B09009B6040 /* TwitterShareExtensionUI.framework in Frameworks */,
+				AB56119D20531AF0009B6040 /* TwitterCore.framework in Frameworks */,
+				AB2397522053F57900765DD7 /* RxKeyboard.framework in Frameworks */,
+				AB0BF08F2053F5A400F2E5FA /* RxSwift.framework in Frameworks */,
+				ABCEE399205319BB003BAD00 /* TwitterKit.framework in Frameworks */,
+				AB2397542053F57900765DD7 /* RxBlocking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,18 +177,10 @@
 			path = core;
 			sourceTree = "<group>";
 		};
-		279041A4D480572C234F09CD /* interactor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = interactor;
-			sourceTree = "<group>";
-		};
 		2790420148EEC14B2129F534 /* modules */ = {
 			isa = PBXGroup;
 			children = (
 				27904BE12F09BB75DC7EA52A /* hashtag */,
-				2790492DFA5E954514F655BE /* search */,
 			);
 			path = modules;
 			sourceTree = "<group>";
@@ -168,6 +198,8 @@
 			isa = PBXGroup;
 			children = (
 				27904E817BD2157A5D8AFA8F /* BaseRouter.swift */,
+				279042A67691B675533C9DF3 /* BasePresenter.swift */,
+				279042BDA03BE05128AEFFDE /* BaseView.swift */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -176,7 +208,8 @@
 			isa = PBXGroup;
 			children = (
 				27904404228BB4DE4FB42ACC /* network */,
-				279041A4D480572C234F09CD /* interactor */,
+				27904A9453E4CAC301AAE569 /* interactor */,
+				27904A45C1734899D9B5B55E /* models */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -185,16 +218,25 @@
 			isa = PBXGroup;
 			children = (
 				27904EF84D0787B11E590000 /* NetworkClient.swift */,
+				27904F278550694AEF71C5F7 /* TwitterNetworkClient.swift */,
 			);
 			path = network;
 			sourceTree = "<group>";
 		};
-		2790492DFA5E954514F655BE /* search */ = {
+		27904A45C1734899D9B5B55E /* models */ = {
 			isa = PBXGroup;
 			children = (
-				27904A1FA86B28EB06880F69 /* HashtagSearchViewController.swift */,
+				27904537E90AF663009AED30 /* Models.swift */,
 			);
-			path = search;
+			path = models;
+			sourceTree = "<group>";
+		};
+		27904A9453E4CAC301AAE569 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				27904361482D3EBF3644F9BC /* TweetInteractor.swift */,
+			);
+			path = interactor;
 			sourceTree = "<group>";
 		};
 		27904BE12F09BB75DC7EA52A /* hashtag */ = {
@@ -202,6 +244,12 @@
 			children = (
 				2790468C57DA6C8C1B2D493D /* ListRouter.swift */,
 				279042DE36DDBB3470A88030 /* ListViewController.swift */,
+				279043B8C66F8D08D41AAB39 /* ListPresenter.swift */,
+				279044E2895DD8F7AB67B063 /* ListPresenterInterface.swift */,
+				27904AC828EEBD17E6759DA4 /* ListViewInterface.swift */,
+				2790455EA1E0ECDF88F47FD4 /* ListData.swift */,
+				27904E85E32A1204C5011D36 /* ListInteractorInput.swift */,
+				27904B4D609993752A2BB528 /* ListInteractorOutput.swift */,
 			);
 			path = hashtag;
 			sourceTree = "<group>";
@@ -262,6 +310,12 @@
 		AB3DB81820530E91000C9F4E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AB23974C2053F57900765DD7 /* RxKeyboard.framework */,
+				AB23974B2053F57800765DD7 /* RxCocoa.framework */,
+				AB23974D2053F57900765DD7 /* RxBlocking.framework */,
+				AB0BF08E2053F5A400F2E5FA /* RxSwift.framework */,
+				AB23974F2053F57900765DD7 /* RxTest.framework */,
+				AB56119C20531AF0009B6040 /* TwitterCore.framework */,
 				AB3DB82020530EE3000C9F4E /* Result.framework */,
 				AB3DB81D20530EAC000C9F4E /* TwitterShareExtensionUI.framework */,
 				AB3DB81B20530EA2000C9F4E /* TwitterKit.framework */,
@@ -411,8 +465,18 @@
 				27904A7A11114C0DDD6AC5D3 /* AppConfiguration.swift in Sources */,
 				27904C3AFCDBF9FB9915526A /* ListRouter.swift in Sources */,
 				279042CE1379AF220C4E2A27 /* ListViewController.swift in Sources */,
-				27904444DDA8A42C53B68846 /* HashtagSearchViewController.swift in Sources */,
 				279048FE4B34E1BEA4D62285 /* BaseRouter.swift in Sources */,
+				279043BAC104F6E8565EE6E3 /* TwitterNetworkClient.swift in Sources */,
+				2790496ABC244698F9406A77 /* ListPresenter.swift in Sources */,
+				279045739D344C8ADE7D6434 /* ListPresenterInterface.swift in Sources */,
+				2790462D798C4ED87830DDD1 /* ListViewInterface.swift in Sources */,
+				279046B8DC6628F2E08EEBFA /* ListData.swift in Sources */,
+				27904CCD6FC6E839CA610337 /* ListInteractorInput.swift in Sources */,
+				27904F6F7CB39F2699BB4C59 /* TweetInteractor.swift in Sources */,
+				279040A33C773146545F1CB0 /* ListInteractorOutput.swift in Sources */,
+				27904854E8CC5CF94DFC6C2B /* BasePresenter.swift in Sources */,
+				279041FF1E29EA7BFC9FDF01 /* BaseView.swift in Sources */,
+				27904ECD163BD37C698A6248 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

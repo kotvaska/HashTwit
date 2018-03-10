@@ -15,10 +15,25 @@ class AppConfiguration {
 
     init() {
         TWTRTwitter.sharedInstance().start(withConsumerKey: consumerKey, consumerSecret: consumerSecret)
+        configure()
     }
 
     func showController(from window: UIWindow) {
         listRouter.showFrom(from: window)
+    }
+
+    func configure() {
+        let networkClient = TwitterNetworkClient()
+        let interactor = TweetInteractor(networkClient: networkClient)
+        let listPresenter = ListPresenter()
+
+        interactor.output = listPresenter
+
+        listPresenter.interactor = interactor
+        listPresenter.router = listRouter
+
+        listRouter.presenter = listPresenter
+
     }
 
 }
