@@ -113,6 +113,7 @@ extension ListViewController: UITableViewDataSource {
 
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as UITableViewCell
 
+        cell.textLabel?.numberOfLines = 0
         cell.textLabel?.text = upcomingItem?.text;
         cell.selectionStyle = UITableViewCellSelectionStyle.none;
 

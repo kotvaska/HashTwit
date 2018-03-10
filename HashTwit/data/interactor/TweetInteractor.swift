@@ -22,8 +22,9 @@ extension TweetInteractor: ListInteractorInput {
         let completion: (Data?, Error?) -> () = { data, error in
             if let data = data, let tweets: Status = try? JSONDecoder().decode(Status.self, from: data) {
                 self.output?.showTweets(tweets.statuses)
+            } else {
+                self.output?.showError(error ?? NetworkError())
             }
-            self.output?.showTweets([])
         }
 
         networkClient.loadTweets(with: hashtag, completion: completion)

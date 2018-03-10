@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--List View Controller-->
+        <!--HashTwit-->
         <scene sceneID="Hd1-69-7po">
             <objects>
                 <viewController storyboardIdentifier="ListViewController" id="dNM-4P-N7D" customClass="ListViewController" customModule="HashTwit" customModuleProvider="target" sceneMemberID="viewController">
@@ -70,7 +70,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oAq-mr-uwI"/>
                     </view>
-                    <navigationItem key="navigationItem" id="CBP-ou-paz"/>
+                    <navigationItem key="navigationItem" title="HashTwit" id="CBP-ou-paz"/>
                     <connections>
                         <outlet property="activityIndicator" destination="dci-AO-KfW" id="cqb-qu-D3x"/>
                         <outlet property="errorView" destination="fXi-Eb-B0U" id="iqz-8S-XJY"/>

@@ -13,13 +13,12 @@ class TwitterNetworkClient: NetworkClient {
 
         let method = "GET"
         let endPoint = "https://api.twitter.com/1.1/search/tweets.json"
-        let param = ["q": hashtag.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)]
-        var error: NSError?
+        let param = ["q": hashtag.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed), "result_type": "recent"]
 
-        let request = client.urlRequest(withMethod: method, urlString: endPoint, parameters: param, error: &error)
+        let request = client.urlRequest(withMethod: method, urlString: endPoint, parameters: param, error: nil)
 
         client.sendTwitterRequest(request) { (response, data, connectionError) -> Void in
-            completion(data, error)
+            completion(data, connectionError)
         }
 
     }

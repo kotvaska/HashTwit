@@ -5,10 +5,7 @@
 
 import Foundation
 
-protocol ListInteractorOutput {
+class NetworkError: Error {
 
-    func showTweets(_ tweets: [Tweet])
-
-    func showError(_ error: Error)
-
+    let text = "Произошла ошибка сетевого соединения"
 }

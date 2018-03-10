@@ -50,6 +50,11 @@ extension ListPresenter: ListPresenterInterface {
 
 extension ListPresenter: ListInteractorOutput {
 
+    func showError(_ error: Error) {
+        onError()
+        view?.showSearchBar()
+    }
+
     func showTweets(_ tweets: [Tweet]) {
         view?.hideLoading()
 
