@@ -8,8 +8,8 @@ import TwitterKit
 
 class AppConfiguration {
 
-    private let consumerKey = "iXZxKcnj7Xu3iDD9UdCthSpTk"
-    private let consumerSecret = "FO0S1BLdhecv37fu1Ac4l7jiRpMwRSHwYp8boUw5Eay0wkpGut"
+    private let consumerKey = "zdG5IipHkwT28ZtZuWTvOG11X"
+    private let consumerSecret = "YkarBOsKIoKroznihUPSzuyPRtQmEOtKrfrhZQtOIBwoypkI1b"
 
     let listRouter: ListRouter = ListRouter()
 

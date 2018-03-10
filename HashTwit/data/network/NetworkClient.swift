@@ -7,6 +7,6 @@ import Foundation
 
 protocol NetworkClient {
 
-    func loadTweets(with hashtag: String)
+    func loadTweets(with hashtag: String, completion: @escaping (Data?, Error?) -> ())
 
 }

@@ -306,3 +306,4 @@ xcuserdata
 
 # End of https://www.gitignore.io/api/xcode,swift,appcode,swiftpm,jetbrains,objective-c,jetbrains+all,jetbrains+iml,xcodeinjection,swiftpackagemanager
 
+*.framework

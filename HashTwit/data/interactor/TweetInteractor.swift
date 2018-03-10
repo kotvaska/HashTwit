@@ -19,7 +19,14 @@ class TweetInteractor {
 extension TweetInteractor: ListInteractorInput {
 
     func findTweets(with hashtag: String) {
-        networkClient.loadTweets(with: hashtag)
+        let completion: (Data?, Error?) -> () = { data, error in
+            if let data = data, let tweets: Status = try? JSONDecoder().decode(Status.self, from: data) {
+                self.output?.showTweets(tweets.statuses)
+            }
+            self.output?.showTweets([])
+        }
+
+        networkClient.loadTweets(with: hashtag, completion: completion)
     }
 
 }

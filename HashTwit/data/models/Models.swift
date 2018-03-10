@@ -5,10 +5,53 @@
 
 import Foundation
 
-struct Tweet {
+struct Status: Codable {
+
+    let statuses: [Tweet]
+
+    enum TopCodingKeys: String, CodingKey {
+        case statuses
+    }
+
+}
+
+struct Tweet: Codable {
 
     let text: String
-    let author: String
+    let author: User
+    let createdAt: String
     let media: String?
+
+    enum CodingKeys: String, CodingKey {
+        case text
+        case createdAt = "created_at"
+        case user
+    }
+
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        text = try values.decode(String.self, forKey: .text)
+        createdAt = try values.decode(String.self, forKey: .createdAt)
+        author = try values.decode(User.self, forKey: .user)
+        media = nil
+    }
+
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(text, forKey: .text)
+        try container.encode(createdAt, forKey: .createdAt)
+        try container.encode(author, forKey: .user)
+    }
+
+}
+
+struct User: Codable {
+    let name: String
+    let nickName: String
+
+    enum CodingKeys: String, CodingKey {
+        case name
+        case nickName = "screen_name"
+    }
 
 }
