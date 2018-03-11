@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TweetTableViewCell" rowHeight="107" id="m2s-ul-veG" customClass="TweetTableViewCell" customModule="HashTwit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="107"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m2s-ul-veG" id="a1p-0B-RU9">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="106.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Author" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEB-FA-XAu">
+                        <rect key="frame" x="16" y="75.5" width="343" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="12-12-2012" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uex-1c-q57">
+                        <rect key="frame" x="16" y="11" width="343" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Tweet" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xps-g6-Uy6">
+                        <rect key="frame" x="16" y="39.5" width="343" height="28"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uex-1c-q57" firstAttribute="leading" secondItem="a1p-0B-RU9" secondAttribute="leadingMargin" id="8ji-B4-j4Q"/>
+                    <constraint firstItem="VEB-FA-XAu" firstAttribute="top" secondItem="Xps-g6-Uy6" secondAttribute="bottom" constant="8" id="GLL-Ob-Crp"/>
+                    <constraint firstItem="Xps-g6-Uy6" firstAttribute="top" secondItem="uex-1c-q57" secondAttribute="bottom" constant="8" id="Ge1-st-cut"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="VEB-FA-XAu" secondAttribute="trailing" id="L3l-tc-Lgn"/>
+                    <constraint firstItem="VEB-FA-XAu" firstAttribute="leading" secondItem="a1p-0B-RU9" secondAttribute="leadingMargin" id="Nc1-9d-K19"/>
+                    <constraint firstItem="Xps-g6-Uy6" firstAttribute="leading" secondItem="a1p-0B-RU9" secondAttribute="leadingMargin" id="etJ-hX-1lP"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="uex-1c-q57" secondAttribute="trailing" id="mLR-4n-xPR"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Xps-g6-Uy6" secondAttribute="trailing" id="oOD-PQ-a42"/>
+                    <constraint firstItem="VEB-FA-XAu" firstAttribute="bottom" secondItem="a1p-0B-RU9" secondAttribute="bottomMargin" id="xCO-4z-oQk"/>
+                    <constraint firstItem="uex-1c-q57" firstAttribute="top" secondItem="a1p-0B-RU9" secondAttribute="topMargin" id="yCl-yT-8rw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="authorLabel" destination="VEB-FA-XAu" id="Snw-CY-Nuk"/>
+                <outlet property="dateLabel" destination="uex-1c-q57" id="rAs-l8-7OH"/>
+                <outlet property="tweetTextLabel" destination="Xps-g6-Uy6" id="wII-k7-U3g"/>
+            </connections>
+            <point key="canvasLocation" x="42.5" y="-344.5"/>
+        </tableViewCell>
+    </objects>
+</document>

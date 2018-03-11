@@ -8,8 +8,6 @@ import RxKeyboard
 import RxSwift
 import TwitterKit
 
-let listCellIdentifier = "ListCellIdentifier"
-
 class ListViewController: UIViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
@@ -38,12 +36,13 @@ class ListViewController: UIViewController {
     }
 
     private func configure() {
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: listCellIdentifier)
+        tableView.register(UINib(nibName: "TweetTableViewCell", bundle: nil), forCellReuseIdentifier: TweetTableViewCell.CELL_ID)
+        tableView.register(UINib(nibName: "IndicatorTableViewCell", bundle: nil), forCellReuseIdentifier: IndicatorTableViewCell.CELL_ID)
         tableView.dataSource = dataSource
         tableView.delegate = delegate
         tableView.tableFooterView = UIView()
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 68
+        tableView.estimatedRowHeight = 105
         tableView.addSubview(refreshControl)
         tableView.sendSubview(toBack: refreshControl)
 

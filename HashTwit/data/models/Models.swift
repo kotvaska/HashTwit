@@ -15,7 +15,7 @@ struct Status: Codable {
 
 }
 
-struct Tweet: Codable {
+struct Tweet: Codable, Hashable, Equatable {
 
     let id: Int
     let text: String
@@ -45,6 +45,14 @@ struct Tweet: Codable {
         try container.encode(text, forKey: .text)
         try container.encode(createdAt, forKey: .createdAt)
         try container.encode(author, forKey: .user)
+    }
+
+    var hashValue: Int {
+        return id
+    }
+
+    static func ==(left: Tweet, right: Tweet) -> Bool {
+        return left.id == right.id
     }
 
 }

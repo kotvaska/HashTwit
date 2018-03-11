@@ -23,6 +23,9 @@ class AppConfiguration {
     }
 
     func configure() {
+
+        // MARK: Table view controller
+
         let networkClient = TwitterNetworkClient()
         let interactor = TweetInteractor(networkClient: networkClient)
         let listPresenter = ListPresenter()
@@ -33,6 +36,25 @@ class AppConfiguration {
         listPresenter.router = listRouter
 
         listRouter.presenter = listPresenter
+
+        // MARK: Tweet cell
+
+        let tweetRouter = TweetTableRouter()
+        let tweetPresenter = TweetTablePresenter()
+
+        tweetPresenter.router = tweetRouter
+        tweetRouter.presenter = tweetPresenter
+        listRouter.tweetRouter = tweetRouter
+
+
+        // MARK: Indicator cell
+
+        let indicatorRouter = IndicatorTableRouter()
+        let indicatorPresenter = IndicatorTablePresenter()
+
+        indicatorPresenter.router = indicatorRouter
+        indicatorRouter.presenter = indicatorPresenter
+        listRouter.indicatorRouter = indicatorRouter
 
     }
 

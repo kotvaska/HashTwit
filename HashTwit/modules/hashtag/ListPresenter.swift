@@ -14,9 +14,24 @@ class ListPresenter: NSObject, BasePresenter {
     private var hashtag = ""
     private let bag = DisposeBag()
     private var displayData: [Tweet]?
+    private var loadMore = false
 
     func onError() {
         view?.showErrorView()
+    }
+
+    private func mergeItems(old: [Tweet], new: [Tweet]) -> [Tweet]? {
+        var set = Set<Tweet>()
+        set.formUnion(new)
+        set.formUnion(old)
+
+        let m = Array(set)
+
+        let tweets: [Tweet] = m.sorted { element, element1 in
+            element.id == element1.id ? (element.createdAt > element1.createdAt) : (element.id > element1.id)
+        }
+
+        return tweets
     }
 
 }
@@ -34,6 +49,7 @@ extension ListPresenter: ListPresenterInterface {
                 .subscribe(onNext: { query in
                     self.hashtag = query
                     self.view?.showLoading()
+                    self.displayData = nil
                     self.updateView()
 
                 }, onError: { e in
@@ -60,7 +76,9 @@ extension ListPresenter: ListInteractorOutput {
     func showTweets(_ tweets: [Tweet]) {
         view?.hideLoading()
 
-        if tweets.count == 0 {
+        displayData = mergeItems(old: displayData ?? [], new: tweets)
+
+        if displayData?.count == 0 {
             onError()
             view?.showSearchBar()
         } else {
@@ -73,24 +91,34 @@ extension ListPresenter: ListInteractorOutput {
 
 extension ListPresenter: ListViewControllerDataSource {
 
+    private enum ListCellType {
+        case tweet, indicator
+    }
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return displayData?.count ?? 0
+        let count = displayData?.count ?? 0
+        return count > 0 ? count + 1 : 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let upcomingItem = displayData?[(indexPath as NSIndexPath).row]
+        switch getCellType(indexPath.row) {
+        case .tweet:
+            return router?.showTweetCell(tableView: tableView, indexPath: indexPath, tweet: displayData?[indexPath.row]) ?? UITableViewCell()
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: listCellIdentifier, for: indexPath) as UITableViewCell
+        case .indicator:
+            self.updateView()
+            return router?.showIndicatorCell(tableView: tableView, indexPath: indexPath) ?? UITableViewCell()
 
-        cell.textLabel?.numberOfLines = 0
-        cell.textLabel?.text = upcomingItem?.text;
-        cell.selectionStyle = UITableViewCellSelectionStyle.none;
+        }
 
-        return cell
+    }
+
+    private func getCellType(_ row: Int) -> ListCellType {
+        return row == (displayData?.count ?? 0) ? ListCellType.indicator : ListCellType.tweet
     }
 
 }

@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2790402C758DA6160C85902D /* IndicatorTableViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2790419890D7B0513ADA22A0 /* IndicatorTableViewInterface.swift */; };
 		279040A33C773146545F1CB0 /* ListInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904B4D609993752A2BB528 /* ListInteractorOutput.swift */; };
+		279040B903838A9B53BD99A9 /* IndicatorTableModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904B39B85CC9977B8E1398 /* IndicatorTableModuleInput.swift */; };
+		279041D64028B2590F2C758A /* IndicatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904C3A8474528B1ACC310D /* IndicatorTableViewCell.swift */; };
 		279041EAF298C314EBD693C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27904AB3EFC38E716B345BCC /* Assets.xcassets */; };
 		279041FF1E29EA7BFC9FDF01 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279042BDA03BE05128AEFFDE /* BaseView.swift */; };
 		279042CE1379AF220C4E2A27 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279042DE36DDBB3470A88030 /* ListViewController.swift */; };
 		279043BAC104F6E8565EE6E3 /* TwitterNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904F278550694AEF71C5F7 /* TwitterNetworkClient.swift */; };
+		27904489836A9DBC48743505 /* TweetTablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279043A608D1A1CE44C8A396 /* TweetTablePresenter.swift */; };
 		279044FF22AE53740BC96CA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279042C1B653E887F60E6E91 /* Main.storyboard */; };
 		279045739D344C8ADE7D6434 /* ListPresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279044E2895DD8F7AB67B063 /* ListPresenterInterface.swift */; };
+		279045D7AA7BA649F9300AFF /* TweetTableModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279041CE367D47E0F4DD91E2 /* TweetTableModuleInput.swift */; };
 		2790462D798C4ED87830DDD1 /* ListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904AC828EEBD17E6759DA4 /* ListViewInterface.swift */; };
+		2790471EDDABD6FC4CE332F3 /* IndicatorTablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279048D7A89A76581EC58151 /* IndicatorTablePresenter.swift */; };
+		2790476552B77FCCE1BFB604 /* IndicatorTableRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279048940EAEBF2581A6F95A /* IndicatorTableRouter.swift */; };
 		279047D4341E54DBC445256B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904FC132BD320582D9A95B /* AppDelegate.swift */; };
 		279047ECE6693A3AED8983BF /* ListViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2790498D2007D3C4C8D68ED3 /* ListViewControllerDataSource.swift */; };
 		2790481D1C978F5034F02EE7 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904EF84D0787B11E590000 /* NetworkClient.swift */; };
@@ -23,23 +30,29 @@
 		279048FE4B34E1BEA4D62285 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904E817BD2157A5D8AFA8F /* BaseRouter.swift */; };
 		2790493FB62CFE84769C5F76 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279048335DFDFCFB74242661 /* NetworkError.swift */; };
 		2790496ABC244698F9406A77 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279043B8C66F8D08D41AAB39 /* ListPresenter.swift */; };
+		27904A5BA1B5FFFE232F0371 /* IndicatorTablePresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904294AA0B919E564E8E60 /* IndicatorTablePresenterInterface.swift */; };
 		27904A7A11114C0DDD6AC5D3 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904C5AD53EC3FC8BF7F014 /* AppConfiguration.swift */; };
+		27904A899CFCD07BF404FA60 /* TweetTableRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904C30F7BB69B8214CE2CF /* TweetTableRouter.swift */; };
 		27904B3BFB65B33C22E3615F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27904CE889B863171EB67F62 /* LaunchScreen.storyboard */; };
 		27904C3AFCDBF9FB9915526A /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2790468C57DA6C8C1B2D493D /* ListRouter.swift */; };
+		27904C624A4EA8193AC1E5F2 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904E45C4D7BEA38D4F3726 /* TweetTableViewCell.swift */; };
 		27904CCD6FC6E839CA610337 /* ListInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904E85E32A1204C5011D36 /* ListInteractorInput.swift */; };
+		27904EC81D618A1962D57066 /* TweetTableViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904D6140C0D0903AB22B91 /* TweetTableViewInterface.swift */; };
 		27904ECD163BD37C698A6248 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904537E90AF663009AED30 /* Models.swift */; };
+		27904EECBF64D5ADDE9D0D5C /* TweetTablePresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279049722855081A7C410922 /* TweetTablePresenterInterface.swift */; };
 		27904F6F7CB39F2699BB4C59 /* TweetInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904361482D3EBF3644F9BC /* TweetInteractor.swift */; };
 		AB0BF08F2053F5A400F2E5FA /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0BF08E2053F5A400F2E5FA /* RxSwift.framework */; };
 		AB0BF0902053F5A400F2E5FA /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB0BF08E2053F5A400F2E5FA /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AB0BF092205509D800F2E5FA /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB0BF091205509D800F2E5FA /* TweetTableViewCell.xib */; };
 		AB2397502053F57900765DD7 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB23974B2053F57800765DD7 /* RxCocoa.framework */; };
 		AB2397512053F57900765DD7 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB23974B2053F57800765DD7 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AB2397522053F57900765DD7 /* RxKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB23974C2053F57900765DD7 /* RxKeyboard.framework */; };
 		AB2397532053F57900765DD7 /* RxKeyboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB23974C2053F57900765DD7 /* RxKeyboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AB2397542053F57900765DD7 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB23974D2053F57900765DD7 /* RxBlocking.framework */; };
 		AB2397552053F57900765DD7 /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB23974D2053F57900765DD7 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AB3DB7ED205134BB000C9F4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3DB7EC205134BB000C9F4E /* ViewController.swift */; };
 		AB3DB800205134BB000C9F4E /* HashTwitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3DB7FF205134BB000C9F4E /* HashTwitTests.swift */; };
 		AB3DB80B205134BB000C9F4E /* HashTwitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3DB80A205134BB000C9F4E /* HashTwitUITests.swift */; };
+		AB3E14EF20552BD8006DF552 /* IndicatorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB3E14EE20552BD8006DF552 /* IndicatorTableViewCell.xib */; };
 		AB56119D20531AF0009B6040 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB56119C20531AF0009B6040 /* TwitterCore.framework */; };
 		AB56119E20531AF0009B6040 /* TwitterCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB56119C20531AF0009B6040 /* TwitterCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AB56119F20531B09009B6040 /* TwitterShareExtensionUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3DB81D20530EAC000C9F4E /* TwitterShareExtensionUI.framework */; };
@@ -89,33 +102,45 @@
 		2790401AE6F32EFE78A643F0 /* ListViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewControllerDelegate.swift; sourceTree = "<group>"; };
 		27904028C08C89E13144CEAC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		279040ABB2ECDCC7E5BD8921 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HashTwit/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		2790419890D7B0513ADA22A0 /* IndicatorTableViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorTableViewInterface.swift; sourceTree = "<group>"; };
+		279041CE367D47E0F4DD91E2 /* TweetTableModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableModuleInput.swift; sourceTree = "<group>"; };
 		27904225A1DE64B5459B5770 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HashTwit/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		27904294AA0B919E564E8E60 /* IndicatorTablePresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorTablePresenterInterface.swift; sourceTree = "<group>"; };
 		279042A67691B675533C9DF3 /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
 		279042BDA03BE05128AEFFDE /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		279042DE36DDBB3470A88030 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		27904361482D3EBF3644F9BC /* TweetInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetInteractor.swift; sourceTree = "<group>"; };
+		279043A608D1A1CE44C8A396 /* TweetTablePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTablePresenter.swift; sourceTree = "<group>"; };
 		279043B8C66F8D08D41AAB39 /* ListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
 		279044E2895DD8F7AB67B063 /* ListPresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPresenterInterface.swift; sourceTree = "<group>"; };
 		27904537E90AF663009AED30 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		2790468C57DA6C8C1B2D493D /* ListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
 		279048335DFDFCFB74242661 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		279048940EAEBF2581A6F95A /* IndicatorTableRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorTableRouter.swift; sourceTree = "<group>"; };
+		279048D7A89A76581EC58151 /* IndicatorTablePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorTablePresenter.swift; sourceTree = "<group>"; };
+		279049722855081A7C410922 /* TweetTablePresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTablePresenterInterface.swift; sourceTree = "<group>"; };
 		2790498D2007D3C4C8D68ED3 /* ListViewControllerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewControllerDataSource.swift; sourceTree = "<group>"; };
 		27904AB3EFC38E716B345BCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27904AC828EEBD17E6759DA4 /* ListViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewInterface.swift; sourceTree = "<group>"; };
+		27904B39B85CC9977B8E1398 /* IndicatorTableModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorTableModuleInput.swift; sourceTree = "<group>"; };
 		27904B4D609993752A2BB528 /* ListInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInteractorOutput.swift; sourceTree = "<group>"; };
+		27904C30F7BB69B8214CE2CF /* TweetTableRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableRouter.swift; sourceTree = "<group>"; };
+		27904C3A8474528B1ACC310D /* IndicatorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorTableViewCell.swift; sourceTree = "<group>"; };
 		27904C5AD53EC3FC8BF7F014 /* AppConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		27904D6140C0D0903AB22B91 /* TweetTableViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewInterface.swift; sourceTree = "<group>"; };
+		27904E45C4D7BEA38D4F3726 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
 		27904E817BD2157A5D8AFA8F /* BaseRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 		27904E85E32A1204C5011D36 /* ListInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInteractorInput.swift; sourceTree = "<group>"; };
 		27904EF84D0787B11E590000 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		27904F278550694AEF71C5F7 /* TwitterNetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterNetworkClient.swift; sourceTree = "<group>"; };
 		27904FC132BD320582D9A95B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB0BF08E2053F5A400F2E5FA /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		AB0BF091205509D800F2E5FA /* TweetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetTableViewCell.xib; sourceTree = "<group>"; };
 		AB23974B2053F57800765DD7 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		AB23974C2053F57900765DD7 /* RxKeyboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxKeyboard.framework; path = Carthage/Build/iOS/RxKeyboard.framework; sourceTree = "<group>"; };
 		AB23974D2053F57900765DD7 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 		AB23974F2053F57900765DD7 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
 		AB3DB7E7205134BB000C9F4E /* HashTwit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HashTwit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB3DB7EC205134BB000C9F4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AB3DB7FB205134BB000C9F4E /* HashTwitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HashTwitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB3DB7FF205134BB000C9F4E /* HashTwitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTwitTests.swift; sourceTree = "<group>"; };
 		AB3DB801205134BB000C9F4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -127,6 +152,7 @@
 		AB3DB81D20530EAC000C9F4E /* TwitterShareExtensionUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterShareExtensionUI.framework; path = Carthage/Build/iOS/TwitterShareExtensionUI.framework; sourceTree = "<group>"; };
 		AB3DB82020530EE3000C9F4E /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		AB3DB823205314B6000C9F4E /* HashTwit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HashTwit-Bridging-Header.h"; sourceTree = "<group>"; };
+		AB3E14EE20552BD8006DF552 /* IndicatorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IndicatorTableViewCell.xib; sourceTree = "<group>"; };
 		AB56119C20531AF0009B6040 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterCore.framework; path = Carthage/Build/iOS/TwitterCore.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -185,6 +211,8 @@
 			isa = PBXGroup;
 			children = (
 				27904BE12F09BB75DC7EA52A /* hashtag */,
+				27904D7B7FD4F395B59C49B4 /* tweet */,
+				2790443CBBD7ADA5D1F3B32C /* indicator */,
 			);
 			path = modules;
 			sourceTree = "<group>";
@@ -194,6 +222,8 @@
 			children = (
 				27904CE889B863171EB67F62 /* LaunchScreen.storyboard */,
 				279042C1B653E887F60E6E91 /* Main.storyboard */,
+				AB0BF091205509D800F2E5FA /* TweetTableViewCell.xib */,
+				AB3E14EE20552BD8006DF552 /* IndicatorTableViewCell.xib */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -226,6 +256,19 @@
 				27904F278550694AEF71C5F7 /* TwitterNetworkClient.swift */,
 			);
 			path = network;
+			sourceTree = "<group>";
+		};
+		2790443CBBD7ADA5D1F3B32C /* indicator */ = {
+			isa = PBXGroup;
+			children = (
+				27904C3A8474528B1ACC310D /* IndicatorTableViewCell.swift */,
+				2790419890D7B0513ADA22A0 /* IndicatorTableViewInterface.swift */,
+				27904294AA0B919E564E8E60 /* IndicatorTablePresenterInterface.swift */,
+				279048D7A89A76581EC58151 /* IndicatorTablePresenter.swift */,
+				279048940EAEBF2581A6F95A /* IndicatorTableRouter.swift */,
+				27904B39B85CC9977B8E1398 /* IndicatorTableModuleInput.swift */,
+			);
+			path = indicator;
 			sourceTree = "<group>";
 		};
 		27904A45C1734899D9B5B55E /* models */ = {
@@ -268,6 +311,19 @@
 			path = hashtag;
 			sourceTree = "<group>";
 		};
+		27904D7B7FD4F395B59C49B4 /* tweet */ = {
+			isa = PBXGroup;
+			children = (
+				27904E45C4D7BEA38D4F3726 /* TweetTableViewCell.swift */,
+				27904D6140C0D0903AB22B91 /* TweetTableViewInterface.swift */,
+				279049722855081A7C410922 /* TweetTablePresenterInterface.swift */,
+				279043A608D1A1CE44C8A396 /* TweetTablePresenter.swift */,
+				279041CE367D47E0F4DD91E2 /* TweetTableModuleInput.swift */,
+				27904C30F7BB69B8214CE2CF /* TweetTableRouter.swift */,
+			);
+			path = tweet;
+			sourceTree = "<group>";
+		};
 		AB3DB7DE205134BB000C9F4E = {
 			isa = PBXGroup;
 			children = (
@@ -292,7 +348,6 @@
 		AB3DB7E9205134BB000C9F4E /* HashTwit */ = {
 			isa = PBXGroup;
 			children = (
-				AB3DB7EC205134BB000C9F4E /* ViewController.swift */,
 				279043B572CE58B35840E59D /* data */,
 				2790420148EEC14B2129F534 /* modules */,
 				27904394AF6DFDE76B228A48 /* ui */,
@@ -447,8 +502,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				27904B3BFB65B33C22E3615F /* LaunchScreen.storyboard in Resources */,
+				AB3E14EF20552BD8006DF552 /* IndicatorTableViewCell.xib in Resources */,
 				279044FF22AE53740BC96CA5 /* Main.storyboard in Resources */,
 				279041EAF298C314EBD693C6 /* Assets.xcassets in Resources */,
+				AB0BF092205509D800F2E5FA /* TweetTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,7 +530,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB3DB7ED205134BB000C9F4E /* ViewController.swift in Sources */,
 				279047D4341E54DBC445256B /* AppDelegate.swift in Sources */,
 				2790481D1C978F5034F02EE7 /* NetworkClient.swift in Sources */,
 				27904A7A11114C0DDD6AC5D3 /* AppConfiguration.swift in Sources */,
@@ -493,6 +549,18 @@
 				2790493FB62CFE84769C5F76 /* NetworkError.swift in Sources */,
 				279047ECE6693A3AED8983BF /* ListViewControllerDataSource.swift in Sources */,
 				279048A0E63CA36F1A9FA2CD /* ListViewControllerDelegate.swift in Sources */,
+				27904C624A4EA8193AC1E5F2 /* TweetTableViewCell.swift in Sources */,
+				27904EC81D618A1962D57066 /* TweetTableViewInterface.swift in Sources */,
+				27904EECBF64D5ADDE9D0D5C /* TweetTablePresenterInterface.swift in Sources */,
+				27904489836A9DBC48743505 /* TweetTablePresenter.swift in Sources */,
+				279045D7AA7BA649F9300AFF /* TweetTableModuleInput.swift in Sources */,
+				27904A899CFCD07BF404FA60 /* TweetTableRouter.swift in Sources */,
+				279041D64028B2590F2C758A /* IndicatorTableViewCell.swift in Sources */,
+				2790402C758DA6160C85902D /* IndicatorTableViewInterface.swift in Sources */,
+				27904A5BA1B5FFFE232F0371 /* IndicatorTablePresenterInterface.swift in Sources */,
+				2790471EDDABD6FC4CE332F3 /* IndicatorTablePresenter.swift in Sources */,
+				2790476552B77FCCE1BFB604 /* IndicatorTableRouter.swift in Sources */,
+				279040B903838A9B53BD99A9 /* IndicatorTableModuleInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
