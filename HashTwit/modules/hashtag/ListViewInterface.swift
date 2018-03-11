@@ -7,8 +7,10 @@ import Foundation
 
 protocol ListViewInterface: BaseView {
 
-    func updateDisplayData(_ data: ListData)
+    func updateDisplayData(_ data: [Tweet])
 
     func showSearchBar()
+
+    func hideRefreshLoader()
 
 }

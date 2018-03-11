@@ -15,7 +15,6 @@
 		279044FF22AE53740BC96CA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279042C1B653E887F60E6E91 /* Main.storyboard */; };
 		279045739D344C8ADE7D6434 /* ListPresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279044E2895DD8F7AB67B063 /* ListPresenterInterface.swift */; };
 		2790462D798C4ED87830DDD1 /* ListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904AC828EEBD17E6759DA4 /* ListViewInterface.swift */; };
-		279046B8DC6628F2E08EEBFA /* ListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2790455EA1E0ECDF88F47FD4 /* ListData.swift */; };
 		279047D4341E54DBC445256B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904FC132BD320582D9A95B /* AppDelegate.swift */; };
 		2790481D1C978F5034F02EE7 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904EF84D0787B11E590000 /* NetworkClient.swift */; };
 		27904854E8CC5CF94DFC6C2B /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279042A67691B675533C9DF3 /* BasePresenter.swift */; };
@@ -95,7 +94,6 @@
 		279043B8C66F8D08D41AAB39 /* ListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
 		279044E2895DD8F7AB67B063 /* ListPresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPresenterInterface.swift; sourceTree = "<group>"; };
 		27904537E90AF663009AED30 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		2790455EA1E0ECDF88F47FD4 /* ListData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListData.swift; sourceTree = "<group>"; };
 		2790468C57DA6C8C1B2D493D /* ListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
 		279048335DFDFCFB74242661 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		27904AB3EFC38E716B345BCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -258,7 +256,6 @@
 				279043B8C66F8D08D41AAB39 /* ListPresenter.swift */,
 				279044E2895DD8F7AB67B063 /* ListPresenterInterface.swift */,
 				27904AC828EEBD17E6759DA4 /* ListViewInterface.swift */,
-				2790455EA1E0ECDF88F47FD4 /* ListData.swift */,
 				27904E85E32A1204C5011D36 /* ListInteractorInput.swift */,
 				27904B4D609993752A2BB528 /* ListInteractorOutput.swift */,
 			);
@@ -481,7 +478,6 @@
 				2790496ABC244698F9406A77 /* ListPresenter.swift in Sources */,
 				279045739D344C8ADE7D6434 /* ListPresenterInterface.swift in Sources */,
 				2790462D798C4ED87830DDD1 /* ListViewInterface.swift in Sources */,
-				279046B8DC6628F2E08EEBFA /* ListData.swift in Sources */,
 				27904CCD6FC6E839CA610337 /* ListInteractorInput.swift in Sources */,
 				27904F6F7CB39F2699BB4C59 /* TweetInteractor.swift in Sources */,
 				279040A33C773146545F1CB0 /* ListInteractorOutput.swift in Sources */,

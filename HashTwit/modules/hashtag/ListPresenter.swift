@@ -18,19 +18,21 @@ class ListPresenter: BasePresenter {
         view?.showErrorView()
     }
 
-    private func convertToListData(_ tweets: [Tweet]) -> ListData {
-        return ListData(tweets: tweets)
-    }
-
 }
 
 extension ListPresenter: ListPresenterInterface {
+
+    func refreshList() {
+        view?.hideRefreshLoader()
+        updateView()
+    }
 
     func onSearchQueryChanged(_ observable: Observable<String>) {
         view?.showLoading()
         observable
                 .subscribe(onNext: { query in
                     self.hashtag = query
+                    self.view?.showLoading()
                     self.updateView()
 
                 }, onError: { e in
@@ -42,7 +44,6 @@ extension ListPresenter: ListPresenterInterface {
     }
 
     func updateView() {
-        view?.showLoading()
         interactor?.findTweets(with: hashtag)
     }
 
@@ -62,7 +63,7 @@ extension ListPresenter: ListInteractorOutput {
             onError()
             view?.showSearchBar()
         } else {
-            view?.updateDisplayData(convertToListData(tweets))
+            view?.updateDisplayData(tweets)
         }
     }
 

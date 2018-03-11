@@ -15,11 +15,19 @@ class ListViewController: UIViewController {
     @IBOutlet weak var errorView: UIView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
+    lazy var refreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refreshList), for: UIControlEvents.valueChanged)
+        refreshControl.layer.zPosition -= 1
+
+        return refreshControl
+    }()
+
     private let cellIdentifier = "ListCellIdentifier"
     private let bag = DisposeBag()
 
     var presenter: ListPresenterInterface?
-    var displayData: ListData?
+    var displayData: [Tweet]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +42,8 @@ class ListViewController: UIViewController {
         tableView.tableFooterView = UIView()
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 68
+        tableView.addSubview(refreshControl)
+        tableView.sendSubview(toBack: refreshControl)
 
         searchBar.delegate = self
         presenter?.onSearchQueryChanged(searchBar.rx.text.orEmpty.asObservable())
@@ -46,6 +56,10 @@ class ListViewController: UIViewController {
 
         presenter?.updateView()
 
+    }
+
+    @objc private func refreshList() {
+        presenter?.refreshList()
     }
 
 }
@@ -64,7 +78,7 @@ extension ListViewController: ListViewInterface {
         searchBar.isHidden = false
     }
 
-    func updateDisplayData(_ data: ListData) {
+    func updateDisplayData(_ data: [Tweet]) {
         displayData = data
         tableView.reloadData()
     }
@@ -92,9 +106,17 @@ extension ListViewController: ListViewInterface {
         errorView.isHidden = true
     }
 
+    func hideRefreshLoader() {
+        refreshControl.endRefreshing()
+    }
+
 }
 
 extension ListViewController: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 
 }
 
@@ -105,11 +127,11 @@ extension ListViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return displayData?.tweets.count ?? 0
+        return displayData?.count ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let upcomingItem = displayData?.tweets[(indexPath as NSIndexPath).row]
+        let upcomingItem = displayData?[(indexPath as NSIndexPath).row]
 
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as UITableViewCell
 

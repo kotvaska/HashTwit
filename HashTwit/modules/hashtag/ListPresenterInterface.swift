@@ -12,4 +12,6 @@ protocol ListPresenterInterface {
 
     func onSearchQueryChanged(_ observable: Observable<String>)
 
+    func refreshList()
+
 }
