@@ -13,4 +13,6 @@ protocol ListViewInterface: BaseView {
 
     func hideRefreshLoader()
 
+    func hideLastCell(indexPath: IndexPath)
+
 }

@@ -84,6 +84,11 @@ extension ListPresenter: ListInteractorOutput {
         } else {
             self.displayData = tweets
             view?.reloadTable()
+
+            if loadMore {
+                loadMore = false
+                view?.hideLastCell(indexPath: IndexPath(row: (displayData?.count ?? 2) - 3, section: 0))
+            }
         }
     }
 
@@ -110,7 +115,10 @@ extension ListPresenter: ListViewControllerDataSource {
             return router?.showTweetCell(tableView: tableView, indexPath: indexPath, tweet: displayData?[indexPath.row]) ?? UITableViewCell()
 
         case .indicator:
-            self.updateView()
+            if !loadMore {
+                loadMore = true
+                self.updateView()
+            }
             return router?.showIndicatorCell(tableView: tableView, indexPath: indexPath) ?? UITableViewCell()
 
         }

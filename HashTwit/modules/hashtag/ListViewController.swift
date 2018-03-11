@@ -75,6 +75,10 @@ extension ListViewController: UISearchBarDelegate {
 
 extension ListViewController: ListViewInterface {
 
+    func hideLastCell(indexPath: IndexPath) {
+        tableView.scrollToRow(at: indexPath, at: .top, animated: true)
+    }
+
     func showSearchBar() {
         searchBar.isHidden = false
     }
