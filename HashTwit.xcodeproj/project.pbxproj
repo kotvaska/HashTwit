@@ -16,8 +16,10 @@
 		279045739D344C8ADE7D6434 /* ListPresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279044E2895DD8F7AB67B063 /* ListPresenterInterface.swift */; };
 		2790462D798C4ED87830DDD1 /* ListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904AC828EEBD17E6759DA4 /* ListViewInterface.swift */; };
 		279047D4341E54DBC445256B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904FC132BD320582D9A95B /* AppDelegate.swift */; };
+		279047ECE6693A3AED8983BF /* ListViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2790498D2007D3C4C8D68ED3 /* ListViewControllerDataSource.swift */; };
 		2790481D1C978F5034F02EE7 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904EF84D0787B11E590000 /* NetworkClient.swift */; };
 		27904854E8CC5CF94DFC6C2B /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279042A67691B675533C9DF3 /* BasePresenter.swift */; };
+		279048A0E63CA36F1A9FA2CD /* ListViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2790401AE6F32EFE78A643F0 /* ListViewControllerDelegate.swift */; };
 		279048FE4B34E1BEA4D62285 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904E817BD2157A5D8AFA8F /* BaseRouter.swift */; };
 		2790493FB62CFE84769C5F76 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279048335DFDFCFB74242661 /* NetworkError.swift */; };
 		2790496ABC244698F9406A77 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279043B8C66F8D08D41AAB39 /* ListPresenter.swift */; };
@@ -84,6 +86,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2790401AE6F32EFE78A643F0 /* ListViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewControllerDelegate.swift; sourceTree = "<group>"; };
 		27904028C08C89E13144CEAC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		279040ABB2ECDCC7E5BD8921 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HashTwit/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		27904225A1DE64B5459B5770 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HashTwit/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
@@ -96,6 +99,7 @@
 		27904537E90AF663009AED30 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		2790468C57DA6C8C1B2D493D /* ListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
 		279048335DFDFCFB74242661 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		2790498D2007D3C4C8D68ED3 /* ListViewControllerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewControllerDataSource.swift; sourceTree = "<group>"; };
 		27904AB3EFC38E716B345BCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27904AC828EEBD17E6759DA4 /* ListViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewInterface.swift; sourceTree = "<group>"; };
 		27904B4D609993752A2BB528 /* ListInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInteractorOutput.swift; sourceTree = "<group>"; };
@@ -258,6 +262,8 @@
 				27904AC828EEBD17E6759DA4 /* ListViewInterface.swift */,
 				27904E85E32A1204C5011D36 /* ListInteractorInput.swift */,
 				27904B4D609993752A2BB528 /* ListInteractorOutput.swift */,
+				2790498D2007D3C4C8D68ED3 /* ListViewControllerDataSource.swift */,
+				2790401AE6F32EFE78A643F0 /* ListViewControllerDelegate.swift */,
 			);
 			path = hashtag;
 			sourceTree = "<group>";
@@ -485,6 +491,8 @@
 				279041FF1E29EA7BFC9FDF01 /* BaseView.swift in Sources */,
 				27904ECD163BD37C698A6248 /* Models.swift in Sources */,
 				2790493FB62CFE84769C5F76 /* NetworkError.swift in Sources */,
+				279047ECE6693A3AED8983BF /* ListViewControllerDataSource.swift in Sources */,
+				279048A0E63CA36F1A9FA2CD /* ListViewControllerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

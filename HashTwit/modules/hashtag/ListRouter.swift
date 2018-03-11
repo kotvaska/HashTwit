@@ -15,6 +15,8 @@ class ListRouter: BaseRouter {
     func showFrom(from window: UIWindow) {
         let viewController = viewControllerFromStoryboard(with: "ListViewController") as! ListViewController
         viewController.presenter = presenter
+        viewController.dataSource = presenter
+        viewController.delegate = presenter
         controller = viewController
         presenter?.view = viewController
         showRootViewController(viewController, in: window)

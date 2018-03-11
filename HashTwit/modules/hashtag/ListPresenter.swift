@@ -5,7 +5,7 @@
 
 import RxSwift
 
-class ListPresenter: BasePresenter {
+class ListPresenter: NSObject, BasePresenter {
 
     var router: ListRouter?
     var view: ListViewInterface?
@@ -13,6 +13,7 @@ class ListPresenter: BasePresenter {
 
     private var hashtag = ""
     private let bag = DisposeBag()
+    private var displayData: [Tweet]?
 
     func onError() {
         view?.showErrorView()
@@ -63,8 +64,41 @@ extension ListPresenter: ListInteractorOutput {
             onError()
             view?.showSearchBar()
         } else {
-            view?.updateDisplayData(tweets)
+            self.displayData = tweets
+            view?.reloadTable()
         }
+    }
+
+}
+
+extension ListPresenter: ListViewControllerDataSource {
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return displayData?.count ?? 0
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let upcomingItem = displayData?[(indexPath as NSIndexPath).row]
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: listCellIdentifier, for: indexPath) as UITableViewCell
+
+        cell.textLabel?.numberOfLines = 0
+        cell.textLabel?.text = upcomingItem?.text;
+        cell.selectionStyle = UITableViewCellSelectionStyle.none;
+
+        return cell
+    }
+
+}
+
+extension ListPresenter: ListViewControllerDelegate {
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 
 }

@@ -8,6 +8,8 @@ import RxKeyboard
 import RxSwift
 import TwitterKit
 
+let listCellIdentifier = "ListCellIdentifier"
+
 class ListViewController: UIViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
@@ -23,11 +25,11 @@ class ListViewController: UIViewController {
         return refreshControl
     }()
 
-    private let cellIdentifier = "ListCellIdentifier"
     private let bag = DisposeBag()
 
     var presenter: ListPresenterInterface?
-    var displayData: [Tweet]?
+    var dataSource: ListViewControllerDataSource?
+    var delegate: ListViewControllerDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,9 +38,9 @@ class ListViewController: UIViewController {
     }
 
     private func configure() {
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
-        tableView.dataSource = self
-        tableView.delegate = self
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: listCellIdentifier)
+        tableView.dataSource = dataSource
+        tableView.delegate = delegate
         tableView.tableFooterView = UIView()
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 68
@@ -78,8 +80,7 @@ extension ListViewController: ListViewInterface {
         searchBar.isHidden = false
     }
 
-    func updateDisplayData(_ data: [Tweet]) {
-        displayData = data
+    func reloadTable() {
         tableView.reloadData()
     }
 
@@ -108,38 +109,6 @@ extension ListViewController: ListViewInterface {
 
     func hideRefreshLoader() {
         refreshControl.endRefreshing()
-    }
-
-}
-
-extension ListViewController: UITableViewDelegate {
-
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-    }
-
-}
-
-extension ListViewController: UITableViewDataSource {
-
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return displayData?.count ?? 0
-    }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let upcomingItem = displayData?[(indexPath as NSIndexPath).row]
-
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as UITableViewCell
-
-        cell.textLabel?.numberOfLines = 0
-        cell.textLabel?.text = upcomingItem?.text;
-        cell.selectionStyle = UITableViewCellSelectionStyle.none;
-
-        return cell
     }
 
 }

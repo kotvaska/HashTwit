@@ -7,7 +7,7 @@ import Foundation
 
 protocol ListViewInterface: BaseView {
 
-    func updateDisplayData(_ data: [Tweet])
+    func reloadTable()
 
     func showSearchBar()
 
