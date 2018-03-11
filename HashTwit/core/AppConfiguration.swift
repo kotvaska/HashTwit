@@ -15,6 +15,7 @@ class AppConfiguration {
 
     init() {
         TWTRTwitter.sharedInstance().start(withConsumerKey: consumerKey, consumerSecret: consumerSecret)
+        UIApplication.shared.statusBarStyle = .lightContent
         configure()
     }
 

@@ -20,20 +20,20 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Author" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEB-FA-XAu">
-                        <rect key="frame" x="16" y="75.5" width="343" height="20.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <rect key="frame" x="16" y="78" width="343" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                        <color key="textColor" red="0.078431372550000003" green="0.65490196079999996" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="12-12-2012" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uex-1c-q57">
-                        <rect key="frame" x="16" y="11" width="343" height="20.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <rect key="frame" x="16" y="11" width="343" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Tweet" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xps-g6-Uy6">
-                        <rect key="frame" x="16" y="39.5" width="343" height="28"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="16" y="36" width="343" height="34"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
